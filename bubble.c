@@ -8,7 +8,10 @@ int main()
  
   printf("Enter number of elements\n");
   scanf("%d", &n);
- 
+ while(n<=0 || n>100)
+ {
+  scanf("%d", &n);
+ }
   printf("Enter %d integers\n", n);
  
   for (c = 0; c < n; c++)
