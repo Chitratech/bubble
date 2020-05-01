@@ -1,14 +1,16 @@
 /* Bubble sort code */
- 
 #include <stdio.h>
- 
 int main()
 {
   int array[100], n, c, d, swap;
  
-  printf("Enter number of elements\n");
+  printf("Enter the number of elements between 1 & 101\n");
   scanf("%d", &n);
- 
+ while(n<=0 || n>100)
+ {
+  printf("The range should be between 1 & 101!\nEnter the threshold again!\n")
+  scanf("%d", &n);
+ }
   printf("Enter %d integers\n", n);
  
   for (c = 0; c < n; c++)
