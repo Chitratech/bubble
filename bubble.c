@@ -1,6 +1,7 @@
 /* Bubble sort code */
  
 #include <stdio.h>
+#include <conio.h>
  
 int main()
 {
@@ -33,4 +34,5 @@ int main()
      printf("%d\n", array[c]);
  
   return 0;
+  getch();
 }
